@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+/*font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Share Tech Mono', monospace;
+Color set:
+*/
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: Black;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display-box {
+    font-family: 'Nanum Gothic Coding', monospace;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 1px;
+    width: 100%;
+    height: 75%;
+    padding: 0.5px;
+}
+#special-btn {
+    background-color: #CD0500;
+}
+#number-btn{
+    background-color: #379C71;
+}
+input[type=button] {
+    font-family: 'Nanum Gothic Coding', monospace;
+    background-color: #064530;
+    color: #B2EBD8;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 50px;
+    height: 70%;
+    outline: none;
+}
+input:active[type=button] {
+    background: #1D5D42;
+    -webkit-box-shadow: inset 0px 0px 5px #B2EBD8;
+    -moz-box-shadow: inset 0px 0px 5px #B2EBD8;
+    box-shadow: inset 0px 0px 5px #B2EBD8;
+}

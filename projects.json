@@ -1,0 +1,62 @@
+{
+  "name": "RevoloerO's Projects" ,
+  "personal_projects":  [
+    {
+      "name" : "Vietnamese Community Website",
+      "time" : "Feb 2022 - now",
+      "concepts" : ["Wordpress","HTML","CSS"],
+      "category": "Web Development",
+      "description": "Rebuild website for the Vietnamese Community in Greater Cleveland, OH. Redesign, Deploy and Maintain website",
+      "url" :"https://vietnamcleveland.com",
+    },{
+      "name" : "JS chat platform",
+      "time" : "Jul 2020 - Aug 2020",
+      "concepts" : ["Javascript","NodeJS","Heroku"],
+      "category": "Application Development",
+      "description": "Create chat platform using JS. Practice JS, NodeJS and deploy to heroku server",
+      "url" :"https://js-chat-platform.herokuapp.com"
+    },
+    {
+      "name" : "MineSweeper",
+      "time" : "Aug 2020",
+      "concepts": ["Javascript","HTML","CSS"],
+      "category": "Game Development",
+      "description": "Create my favourite childhood game using Javascript",
+      "url" : "https://revoloero.github.io/project/index.html"
+    },
+    {
+      "name" : "2048",
+      "time" : "Apr 2020 - May 2020",
+      "concepts" : "Unity",
+      "category": "Game Development",
+      "description": "Learning Unity to create 2048 game for Windows version",
+      "url" : "https://github.com/RevoloerO/2048-unity"
+    }
+  ],
+  "group-projects":  [
+    {
+      "name" : "Smart Entertaining Pet (SEP)",
+      "time" : "Sep 2020 - May 2021",
+      "concepts": ["Python", "Raspberry Pi", "Text-to-Speech", "Voice Recognition", "Natural Language Processing", "Sentiment Analysis"],
+      "category": "Software Development",
+      "description": "Senior Project at Cleveland State University. Designed and implemented a virtual assistant to a plushies for children which supports both educational and entertaining aspect in the pandemic.",
+      "url": "https://revoloero.github.io/project/SDposter.png"
+    },
+    {
+      "name" : "Hyland Hackathon 2020",
+      "time" : "Jan 2020",
+      "concepts": ["HTML","CSS","Javascript"],
+      "category": "Web Development",
+      "description": "Create a web-based solution for the Connection networking between mentors and clients",
+      "url": "https://github.com/ManishShiwlani/Hyland-Hackathon-2020"
+    },
+    {
+      "name" : "Chess Game 2020",
+      "time" : "Jan 2020 - May 2020",
+      "concepts": ["Python","Pygame"],
+      "category": ["Game Development","Software Development"],
+      "description": "CIS434: Software Engineering. Junior group project at Cleveland State University. Create Chess game using Python and Pygame, apply simple bot functions",
+      "url": "https://github.com/HamiltonLaws/Group-6"
+    }
+  ]
+}

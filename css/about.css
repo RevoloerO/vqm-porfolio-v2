@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Six+Caps);
+/* Information Section*/
+.info {
+  margin-top: 1rem;
+  text-align: center;
+}
+.info img {
+  margin: 0 auto 5% auto;
+  border-radius:50%;
+  min-width: ;
+  max-width: 250px;
+}
+.info p{
+  font-family: "Lucida Console" ;
+  font-size: 18px;
+  color: var(--clr-smooky-black);
+  margin: auto;
+  padding-bottom: 2%;
+}
+.info a { color: inherit; }
+.info a:hover{
+  color: var(--clr-deep-dumpling);
+}
+.info #name {
+  color: var(--clr-green-sheen);
+  letter-spacing: .2em;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-family: six caps;
+  text-shadow: .07em .07em 0 var(--clr-chinese-silver), .1em .1em 0
+}
+
+/* Resume Section*/
+.resumefile{
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--clr-smooky-black);
+}
+.resumefile p{
+  color: var(--clr-medium-carmine);
+  letter-spacing: .2em;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-family: six caps;
+  margin-bottom: auto;
+  text-shadow: .07em .07em 0 var(--clr-chinese-silver), .1em .1em 0
+}
+.resumefilea { color: var(--clr-smooky-black); }
+.resumefile a:hover{
+  color: var(--clr-deep-dumpling);
+}
+.resume{
+
+  display:flex;
+  width:1100px;
+}
+/* SKill table (left table)*/
+.skill{
+
+  width: 30%;
+  text-align: center;
+}
+.skill .item{
+
+  margin-bottom: 5px;
+  padding: 5px 5px;
+}
+.skill .item #topic1{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: six caps;
+  letter-spacing: .2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--clr-deep-dumpling);
+}
+.skill .item #content1 {
+  font-family: "Lucida Console" ;
+  margin-bottom: auto;
+  font-weight: bold;
+}
+
+/* Experience table (right table)*/
+.exp{
+
+  width: 70%;
+}
+.exp .item {
+
+  margin-bottom: 5px;
+  padding: 5px 5px;
+
+}
+.exp .item #topic2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: six caps;
+  letter-spacing: .2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--clr-deep-dumpling);
+}
+.exp .item #content2 {
+  border-left: 2.5px solid var(--clr-deep-dumpling);
+  padding-left: 25px;
+  margin-left: 10px;
+  font-family: "Lucida Console" ;
+  margin-bottom: auto;
+  text-align: justify;
+}
+.exp .item i {
+  color: var(--clr-deep-dumpling);
+}

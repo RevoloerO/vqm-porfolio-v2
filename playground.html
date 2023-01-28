@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Site</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/playground.css" />
+  <link rel="stylesheet" href="project/Calculator/styles.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-center">
+      <div class="title"><a href="index.html" >MaiSITE</a ></div>
+      <a href="index.html" >Home</a>
+      <a href="FullStack-dev/roadmap.html">Dev-Roadmap</a>
+      <a href="playground.html" class="active">Playground</a>
+      <a href="project.html">projects</a>
+      <a href="about.html">about</a>
+    </div>
+  </div>
+
+  <main>
+    <a href="project/Calculator/calculator.html">Calculator</a>
+    <table class="calculator">
+      <tr>
+        <td colspan="4"> <input class="display-box" type="text" id="previous" disabled /> </td>
+
+      </tr>
+      <tr>
+        <td colspan="4"> <input class="display-box" type="text" id="result" disabled /> </td>
+
+      </tr>
+      <tr>
+        <!-- display() function displays the value of clicked button -->
+        <td> <input type="button" value="(" onclick="display('(')" /> </td>
+        <td> <input type="button" value=")" onclick="display(')')" /> </td>
+        <td> <input type="button" value="%" onclick="display('%')" /> </td>
+        <td> <input type="button" value="C" onclick="clearScreen()" id="special-btn" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" value="1" onclick="display('1')" id="number-btn"/> </td>
+        <td> <input type="button" value="2" onclick="display('2')" id="number-btn"/> </td>
+        <td> <input type="button" value="3" onclick="display('3')" id="number-btn"/> </td>
+        <td> <input type="button" value="/" onclick="display(' / ')" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" value="4" onclick="display('4')" id="number-btn"/> </td>
+        <td> <input type="button" value="5" onclick="display('5')" id="number-btn"/> </td>
+        <td> <input type="button" value="6" onclick="display('6')" id="number-btn"/> </td>
+        <td> <input type="button" value="*" onclick="display(' * ')" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" value="7" onclick="display('7')" id="number-btn"/> </td>
+        <td> <input type="button" value="8" onclick="display('8')" id="number-btn"/> </td>
+        <td> <input type="button" value="9" onclick="display('9')" id="number-btn"/> </td>
+        <td> <input type="button" value="-" onclick="display(' - ')" /> </td>
+
+      </tr>
+      <tr>
+        <td> <input type="button" value="." onclick="display('.')" /> </td>
+        <td> <input type="button" value="0" onclick="display('0')" id="number-btn"/> </td>
+
+        <!-- calculate() function evaluates the mathematical expression -->
+        <td> <input type="button" value="e" onclick="display('e')"/> </td>
+        <td> <input type="button" value="+" onclick="display(' + ')" /> </td>
+      </tr>
+      <tr>
+        <td colspan="2"> <input  type="button" value="00" onclick="display('00')" id="number-btn" /> </td>
+        <td colspan="2" rowspan="2"> <input type="button" value="ENTER" onclick="calculate()" id="special-btn" /> </td>
+      </tr>
+      <tr>
+        <td colspan="2"> <input  type="button" value="Ans" onclick="displayAns()" /> </td>
+      </tr>
+    </table>
+    <div class="list">
+
+
+
+
+      <div class="container">
+        <h3>Background Color Changer</h3>
+        <p class="title">Active color: <span class="active-color">#E5E5DB</span></h2>
+        <p class="title">Get color: <span class="color">#E5E5DB</span></h2>
+        <div class="content">
+          <button class="btn btn-hero" id="btn">Get Random</button>
+          <button class="btn btn-hero" id="btn1">Set BG</button>
+          <button class="btn btn-hero" id="defaultBtn">Default BG</button>
+        </div>
+      </div>
+
+
+
+      <article class="info" >
+        <div class="container">
+          <button type="button" class="info-btn"><h3>Browser Info </h3></button>
+
+          <div class="info-text">
+            <p><script src="JS/user.js"></script></p>
+          </div>
+
+        </div>
+      </article>
+      <article class="info" >
+        <div class="container">
+          <h2>Clock<h2>
+          <div class="di-clock">
+            <p><script type="JS/clock.js"></script></p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </main>
+  <!-- javascript -->
+  <script src="JS/color.js"></script>
+  <script type="text/javascript" src="project/Calculator/calculator.js"></script>
+  <footer>
+    <ul>
+      <li><a style="text-decoration: none;" href="https://www.linkedin.com/in/vuong-quyen-mai">
+        <i class="fa fa-linkedin-square" style="color:blue"></i>
+      </a></li>
+      <li><a style="text-decoration: none;" href="https://github.com/RevoloerO">
+        <i class="fa fa-github-square" style="color:black"></i>
+      </a></li>
+    </ul>
+    <p>
+      &copy; <script > document.write(new Date().getFullYear());</script> Vuong Quyen Mai
+    </p>
+  </footer>
+</body>
+</html>

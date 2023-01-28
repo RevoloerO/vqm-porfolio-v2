@@ -1,0 +1,57 @@
+ul, #familyTree {
+  list-style-type: none;
+}
+
+#familyTree {
+  font-family: 'Square Peg', cursive;
+  margin: 0;
+  padding: 0 3%;
+  letter-spacing: 2px;
+
+}
+.box:hover, .nobox:hover{
+  text-decoration: underline;
+  background-image:  url("../images/letter-background.jpg");
+  background-size: cover;
+}
+.nobox::before {
+  content: "\2299"; /*\22a1: blankbox, \2299: circle*/
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+.box {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  transition: 0.5s;
+}
+
+.box::before {
+  content: "\2295 ";/*\2610: blankbox, \2295: plus*/
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.check-box::before {
+  content: "\2295";/*\2611: checkedbox, \2296: minus*/
+  transform: rotate(45deg);
+  color: maroon;
+}
+
+.nested {
+  display: none;
+  padding-left: 5%;
+}
+
+.active {
+  display: block;
+}
+@media (min-width: 1550px) {
+  #familyTree {
+    padding: 0 20%;
+  }
+}

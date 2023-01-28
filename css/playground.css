@@ -1,0 +1,64 @@
+.list{
+  display: block;
+}
+
+.container {
+  margin-top: 1rem;
+  text-align: center;
+  background: var(--clr-ghost-white);
+  border: 0.25rem solid var(--clr-smooky-black);
+  border-radius: var(--radius);
+  padding: 1rem;
+
+}
+.list .container h3 {
+
+  color: var(--clr-myrtle-green);
+  border-radius: var(--radius);
+  margin: auto;
+  font-family: "Lucida Console" ;
+}
+.list .container .title{
+    text-align: left;
+    color: var(--clr-medium-carmine);
+    margin: 10px 10px;
+    font-family: "Lucida Console" ;
+}
+.list .container p {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  font-family: "Lucida Console" var(--ff-black);
+  display: fixed;
+}
+.list .container .content{
+  display: flex;
+}
+.info button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.active-color {
+  color: var(--clr-vintage-white);
+
+}
+.color {
+  color: var(--clr-vintage-white);
+
+}
+/* drawing board*/
+.di-clock {
+    letter-spacing: 7px;
+    background: var(--clr-black);
+}
+/* show text*/
+.info-text {
+  display: none;
+  font-family: "Lucida Console" var(--ff-black);
+}
+.show-text .info-text {
+  display: block;
+}

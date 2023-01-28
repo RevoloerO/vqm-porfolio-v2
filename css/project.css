@@ -1,0 +1,46 @@
+
+.list{
+  text-transform: center;
+  padding: 1rem 5rem;
+
+}
+.list h2{
+  color: var(--clr-red-2);
+  font-family: Courier;
+  text-align: center;
+  margin: 2rem;
+  text-shadow: 0.75px 0.75px 0  var(--clr-black), -0.75px -0.75px 0  var(--clr-black);
+}
+.list p{
+  margin: 0 1rem;
+  text-align: center;
+}
+.project-info {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  border: 0.1rem solid var(--clr-gold);
+}
+.project-info p {
+  padding: 0.5rem 0 0 0.5rem;
+  margin-bottom: 0;
+  letter-spacing: var(--spacing);
+  color: var(--clr-gold);
+  font: 20px Helvetica,bold ;
+}
+.project-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--clr-gold);
+  transition: var(--transition);
+}
+.project-btn a:visited,a:link {
+   text-decoration: none;
+   color: var(--clr-gold);
+}

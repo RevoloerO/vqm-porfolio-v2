@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+body {
+  margin: 0;
+}
+.header {
+  /*background-color: #f1f1f1; /* Grey background */
+  background-image: url("../images/background1.jpg");
+  background-size: cover;
+  text-align: center;
+  position: relative; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  font-family: "Carattere";
+}
+
+#header-title {
+  background-color: inherit;
+  transition: 0.2s;
+  position: absolute;
+  width: 100%;
+  bottom: 30%;
+  right: 10%;
+}
+
+#fixed-header{
+  visibility: hidden;
+  background-image: url("../images/background1.jpg");
+  background-size: cover;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top:0;
+   font-family: "Carattere";
+   padding-top: 5px;
+   z-index: 2;
+}
+#fixed-header-title {
+  right: 10%;
+  display: block;
+}
+
+/***********************FIXED fixed-topnav ***********/
+.fixed-topnav {
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+.fixed-topnav a {
+  color: #f2f2f2;
+  text-align: center;
+
+  text-decoration: none;
+  letter-spacing: 3px;
+  display: none;
+}
+
+.fixed-topnav .icon {
+  display: block;
+  color: black;
+}
+.fixed-topnav.responsive {
+  position: relative;
+  text-align: center;
+  background-size:cover;
+}
+.fixed-topnav.responsive a {
+  display: block;
+  transition: 0.2s;
+  padding-bottom: 20px;
+  color: black;
+}
+.fixed-topnav.responsive a.active {
+  color:black;
+  text-decoration: underline;
+}
+.fixed-topnav.responsive a:not(.active) {
+
+}
+.fixed-topnav.responsive a:not(.active):not(.icon):hover {
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/*********************** Slideshow ***********/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1550px;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.caption-text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slide-active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*********************** Container ********************/
+/*contain title*/
+.containerTitle{
+  font-family: 'Square Peg', cursive;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 0 20px 0;
+}
+
+.containerContent{
+  padding: 0 50px 50px;
+}
+
+#introduction{
+  background-image: url("../images/letter-background.jpg");
+  background-size: cover;
+  padding: 5% 5%;
+}
+#introduction-letter{
+
+}
+.containerContent p{
+  font-family: 'Square Peg', cursive;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 590;
+  max-width: 1550px;
+  margin: auto;
+}
+/*********************** Responsive display***********/
+@media screen and (min-width: 1250px) {
+  .fixed-topnav a {
+     font-size: 35px;
+  }
+  .fixed-topnav a.active,.fixed-topnav a:not(.icon):hover {
+     font-size: 40px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .fixed-topnav a {
+     font-size: 25px;
+  }
+  .fixed-topnav a.active ,.fixed-topnav a:not(.icon):hover {
+     font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fixed-topnav a {
+     font-size: 18px;
+  }
+  .fixed-topnav a.active,.fixed-topnav a:not(.icon):hover  {
+     font-size: 23px;
+  }
+}
+/********************** specific screen setting**************/
+@media (min-width: 1550px) {
+  .header {
+   min-height: 918px;
+   font-size: 105px;
+   background-position: 50% 90%;
+  }
+  #fixed-header, .containerTitle {
+   font-size: 90px;
+  }
+  .containerContent{
+    font-size: 40px;
+  }
+}
+@media (max-width: 1550px) {
+  .header {
+   min-height: 718px;
+   font-size: 90px;
+  }
+  #fixed-header, .containerTitle {
+   font-size: 90px;
+  }
+  .containerContent{
+    font-size: 40px;
+  }
+}
+@media (max-width: 1250px) {
+   .header {
+    min-height:  504px;
+    font-size: 65px;
+  }
+  #fixed-header, .containerTitle {
+   font-size: 65px;
+  }
+  .containerContent{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+   .header {
+    min-height: 374px;
+    font-size: 55px;
+  }
+  #fixed-header, .containerTitle {
+   font-size: 55px;
+  }
+  .containerContent{
+    font-size: 25px;
+  }
+}
+@media (max-width: 767px) {
+   .header {
+    min-height: 260px;
+    font-size: 45px;
+  }
+  #fixed-header, .containerTitle {
+   font-size: 45px;
+  }
+  .containerContent{
+    font-size: 20px;
+  }
+  #fixed-header {
+    background-image: url("../images/nav-background.jpg");
+  }
+}
+@media (max-width: 600px) {
+   .header {
+    min-height: 170px;
+    font-size: 35px;
+  }
+  #fixed-header, .containerTitle {
+   font-size: 35px;
+  }
+  .containerContent{
+    font-size: 15px;
+  }
+  .prev, .next,.caption-text {font-size: 11px}
+}
+/*general*/
+@media (min-width: 767px) {
+  .header {
+      background-position: 50% 50%;
+  }
+  #header-title {
+    right: 10%;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+      background-position: 10% 70%;
+  }
+}
